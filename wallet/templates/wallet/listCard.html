@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+   <h1>Card Table</h1>
+
+   {% for card in cards %}
+    <table>
+
+        <th>{{card.card_number}}</th>
+        <td>{{card.card_name}}</td>
+        <td>{{card.card_type}}</td>
+        <td>{{card.card_status}}</td>
+        <td>{{card.cvv_security}}</td>
+
+        {% endfor %}
+    </table>
+    
+</body>
+</html>
